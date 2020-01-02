@@ -8,6 +8,17 @@
   padding: 3em;
 }
 
+#btn input {
+  border: 0px;
+  border-radius: 10px;
+  background-color: rgb(230, 227, 227);
+  color:palevioletred;
+  font-family: 'Rock Salt', cursive;
+  margin: 0.7em;
+  height: 3em;
+  width: 20em;
+}
+
 #landing {
   align-items: center;
   color: white;
@@ -42,6 +53,14 @@
 .menu-options a:hover {background-color: #ddd;}
 .menu:hover .menu-options {display: block;}
 .menu:hover i {display: none;}
+
+#name input {
+  font-family: 'Rock Salt', cursive;
+  height: 3em;
+  width: 20em;
+  background-color: rgb(230, 227, 227);
+  margin: 0.7em;
+}
 
 #welcome {
   align-items: center;
@@ -88,6 +107,7 @@
     align-items:center;
     justify-content:center;
     font-size:40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     background-image: url("../assets/family.jpg");
     background-size: cover;
 
@@ -104,6 +124,7 @@
     align-items:center;
     justify-content:center;
     font-size:40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     background-image: url("../assets/work.jpg");
 
     background-size: cover;
@@ -121,6 +142,7 @@
     align-items:center;
     justify-content:center;
     font-size:40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     background-image: url("../assets/individual.jpg");
     background-size: cover;
 
@@ -135,6 +157,7 @@
     align-items:center;
     justify-content:center;
     font-size:40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     background-image: url("../assets/access.jpg");
     background-size: cover;
 
@@ -146,25 +169,43 @@
     background-image: url("../assets/background.jpg");
     background-position: center;
     background-repeat: repeat;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
     
   }
-  
+  main{
+    margin: 0 auto;
+  }
+  .detail{
+    margin:0 auto;
+  }
 
   .activities{
-
-    margin: 5px auto;
-    width:100px;
-    height:100px;
-    display:grid;
-    grid-template-columns: 50px 200px;
-    grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    color: honeydew;
-
+  border:rgb(147, 172, 157) solid 1px;
+  background-color: rgba(230, 228, 228, 0.07);
+  border-radius: 20px;
+  margin:0 auto 3em;
+  height: 300px;
+  width:800px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: honeydew;
 
   }
 
- 
+
+  .save{
+    margin: 5px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .remove{
+    background-color:rgb(3, 3, 21);
+    border-color: rgb(3, 3, 29);
+  }
