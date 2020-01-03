@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background-color: palevioletred;
+  background-color: rgb(131, 19, 235);
   color: rgb(223, 217, 192);
   display: flex;
   font-family: 'Lobster', cursive;
@@ -25,6 +25,16 @@ h1{
  
 }
 
+#exp{
+  color:rgb(223, 217, 192);
+  font-family: 'Lobster', cursive;
+  font-size: medium;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+ }
+
 
 @media(min-width: 768px){
   main  {
@@ -32,8 +42,22 @@ h1{
   }
 }
   
+
 @media only screen and (max-width: 500px) {
-  main{
-      max-width: 500px;
+  button.mb{
+    height: 200px;
+    width:80%;
+
   }
-}
+  div.activities{
+    width:80%;
+    height: 300px;
+  }
+
+  main.container{
+    justify-items: normal;
+    padding-left: 30px;
+     grid-template-columns: auto;
+
+  }
+} 
